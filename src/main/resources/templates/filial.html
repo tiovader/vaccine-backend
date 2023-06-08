@@ -224,7 +224,7 @@
         event.preventDefault()
         const cidade = event.target.cidade.value
         const estado = event.target.estado.value
-        const url = new URL("http://localhost:8080/api/filial")
+        const url = new URL("http://localhost:8080/api/dimension/render")
         if (cidade !== null && cidade !== undefined && cidade !== "") {
             url.searchParams.set("cidade", cidade)
         }
